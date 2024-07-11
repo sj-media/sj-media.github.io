@@ -1,6 +1,6 @@
 /* latin-ext */
 @font-face {
-	font-family: 'montserrat-light';
+	font-family: '$font-montserrat-light';
 	font-style: normal;
 	font-weight: 400;
 	src: local('Montserrat-light'), local('Montserrat-light'), url(/assets/fonts/Montserrat-Light.woff2) format('woff2');
@@ -8,7 +8,7 @@
 }
 /* latin */
 @font-face {
-	font-family: 'montserrat-light';
+	font-family: '$font-montserrat-light';
 	font-style: normal;
 	font-weight: 400;
 	src: local('Montserrat-light'), local('Montserrat-light'), url(/assets/fonts/Montserrat-Light.woff2) format('woff2');
@@ -16,7 +16,7 @@
 }
 /* devanagari */
 @font-face {
-	font-family: 'montserrat-bold';
+	font-family: '$font-montserrat-bold';
 	font-style: normal;
 	font-weight: 600;
 	src: local('montserrat-bold'), local('montserrat-bold'), url(/assets/fonts/Montserrat-Bold.woff2) format('woff2');
@@ -24,7 +24,7 @@
 }
 /* latin-ext */
 @font-face {
-	font-family: 'montserrat-bold';
+	font-family: '$font-montserrat-bold';
 	font-style: normal;
 	font-weight: 600;
 	src: local('montserrat-bold'), local('montserrat-bold'), url(/assets/fonts/montserrat-bold.woff2) format('woff2');
@@ -32,7 +32,7 @@
 }
 /* latin */
 @font-face {
-	font-family: 'montserrat-bold';
+	font-family: '$font-montserrat-bold';
 	font-style: normal;
 	font-weight: 600;
 	src: local('montserrat-bold'), local('montserrat-bold'), url(/assets/fonts/montserrat-bold.woff2) format('woff2');
