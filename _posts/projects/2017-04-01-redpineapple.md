@@ -10,11 +10,12 @@ project:
   title: "South Africa"
   type: "Photography"
   url: "https://github.com/sj-media/sj-media.github.io"
-  logo: "/assets/images/projects/southafrica/logo.png"
+  logo: "/assets/images/projects/southafrica/logo2.png"
   tech: "HTML, CSS, Boostrap, Sass, JavaScript, jQuery, Jekyll"
 
 agency:
   title: "Red Pineapple Co"
+  url: "https://github.com/arnolds/pineapple"
   url: "https://github.com/arnolds/pineapple"
   year: "2017"
 
