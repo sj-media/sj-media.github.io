@@ -5,7 +5,7 @@ html {
 body {
 	background: $color-white;
 	color: $color-black;
-	font-family: $font-poppins;
+	font-family: $font-montserrat-bold;
 	font-size: 1.8em;
 	line-height: 1.6;
 	font-weight: 600;
@@ -22,10 +22,10 @@ h1,
 }
 
 h2,
-.h2 {	
+.h2 {
 	color: $color-silver-chalice;
 	display: block;
-	font-family: $font-lekton;
+	font-family: $font-montserrat-light;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: .2rem;
@@ -37,7 +37,7 @@ h2,
 h3,
 .h3 {
 	color: $color-black;
-	font-family: $font-poppins;
+	font-family: $font-montserrat-bold;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1;
@@ -56,7 +56,7 @@ a {
 ul {
 	margin: 0;
 	padding: 0;
-	list-style-type: none;	
+	list-style-type: none;
 }
 
 img {
@@ -85,8 +85,8 @@ code {
 	background: $color-white;
 	border: 1px solid $color-silver-chalice;
 	border-radius: 3px;
-	font-family: $font-lekton;
-	font-size: 1.5rem;	
+	font-family: $font-montserrat-light;
+	font-size: 1.5rem;
 	padding: .1rem .4rem;
 
 	var {
@@ -99,7 +99,7 @@ dl {
 
 	dt,
 	dd {
-		font-family: $font-lekton;		
+		font-family: $font-montserrat-light;
 	}
 
 	dt {
@@ -113,9 +113,9 @@ dl {
 
 .responsive-table {
 	margin-bottom: 3rem;
-	
+
 	@media (max-width: $breakpoint-xsmall) {
-		display: block;	
+		display: block;
 		overflow-x: scroll;
 		max-width: $breakpoint-xsmall;
 
@@ -127,7 +127,7 @@ dl {
 }
 
 table {
-	border-collapse: collapse;	
+	border-collapse: collapse;
 	width: 100%;
 
 	thead {
@@ -137,14 +137,14 @@ table {
 		}
 	}
 
-	tbody > tr:nth-child(odd) > td, 
+	tbody > tr:nth-child(odd) > td,
 	tbody > tr:nth-child(odd) > th {
 		background: $color-white-sand;
 	}
 
 	th,
 	td {
-		font-family: $font-lekton;
+		font-family: $font-montserrat-light;
 		font-weight: 400;
 		text-align: left;
 		padding: .5rem 1rem;
