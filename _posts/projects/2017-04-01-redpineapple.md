@@ -10,7 +10,7 @@ project:
   title: "South Africa"
   type: "Photography"
   url: "https://github.com/sj-media/sj-media.github.io"
-  logo: "/assets/images/projects/southafrica/logo2.png"
+  logo: "/assets/images/projects/southafrica/logo.jpg"
   tech: "HTML, CSS, Boostrap, Sass, JavaScript, jQuery, Jekyll"
 
 agency:
