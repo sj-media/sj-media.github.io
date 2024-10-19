@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Honey Project</title>
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+            overflow:hidden
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            object-fit: cover; /* Ensures consistent size without stretching */
+            aspect-ratio: 16/9; /* Maintain a 16:9 ratio for all images */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .active-slide {
+            display: block;
+        }
+
+        .slideshow-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .container p {
+            margin-top: 40px;
+            font-size: 16px;
+            line-height: 1.6;
+            width: 50ch; /* Limits the width to about 8-12 words */
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center; /* Optional, if you want the text to be centered */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SJ Media</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>The Honey Project</h1>
+        
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <img class="slides active-slide" src="honey/Artboard 7@42.png" alt="Modern Logo">
+            <img class="slides" src="honey/Artboard 8@42.png" alt="Modern Logomark">
+            <img class="slides" src="honey/modernmock1.png" alt="Modern Mock 1">
+            <img class="slides" src="honey/modernmock2.png" alt="Modern Mock 2">
+            <img class="slides" src="honey/Artboard 10@42.png" alt="Vintage Logo">
+            <img class="slides" src="honey/Artboard 10@42.png" alt="Vintage Logomark">
+            <img class="slides" src="honey/vintagemock.png" alt="Vintage Mock">
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <p>The Honey Project is a mock brief assignment set by my college. With this piece of work I decided to make both a modern and a vintage variant, of which I believe the modern variant to be the stronger piece. Regardless, both variants can be seen above. Which one do you prefer?</p>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slides');
+
+        function changeSlide(n) {
+            slides[currentSlide].classList.remove('active-slide');
+            currentSlide = (currentSlide + n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active-slide');
+        }
+    </script>
+</body>
+</html>

@@ -55,13 +55,37 @@ h1 {
     gap: 10px;
 }
 
+.grid a {
+    position: relative;
+    display: block;
+}
+
 .grid a img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+
+.grid a .alt-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Makes sure the text doesn't block interaction */
 }
 
 .grid a:hover img {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(50%); /* Darkens the image */
+}
+
+.grid a:hover .alt-text {
+    opacity: 1; /* Shows the alt text */
 }
