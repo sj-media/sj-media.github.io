@@ -20,13 +20,14 @@
             display: none;
             width: 100%;
             transition: transform 0.3s, box-shadow 0.3s;
-            object-fit: cover; /* Ensures consistent size without stretching */
-            /*aspect-ratio: 16/9; /* Maintain a 16:9 ratio for all images */
+            object-fit: contain; /* Ensures consistent size without stretching */
+            aspect-ratio: 16/9; /* Maintain a 16:9 ratio for all images */
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .active-slide {
             display: block;
+            
         }
 
         .slideshow-container img:hover {
