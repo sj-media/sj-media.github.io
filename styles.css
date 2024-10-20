@@ -3,6 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+    .logo {
+        font-size: 5vw;
+    }
+
+    nav ul {
+        gap: 5vw;
+    }
+
+    nav a {
+        font-size: 3.5vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    .content p {
+        font-size: 3vw;
+    }
+
+    .footer-item a {
+        font-size: 3.5vw;
+    }
+
+    .footer-item img {
+        width: 6vw;
+    }
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
