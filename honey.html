@@ -86,13 +86,13 @@
         
         <!-- Slideshow -->
         <div class="slideshow-container">
-            <img class="slides active-slide" src="honey/Artboard 7@42.png" alt="Modern Logo">
-            <img class="slides" src="honey/Artboard 8@42.png" alt="Modern Logomark">
-            <img class="slides" src="honey/modernmock1.png" alt="Modern Mock 1">
-            <img class="slides" src="honey/modernmock2.png" alt="Modern Mock 2">
-            <img class="slides" src="honey/Artboard 10@42.png" alt="Vintage Logo">
-            <img class="slides" src="honey/Artboard 10@42.png" alt="Vintage Logomark">
-            <img class="slides" src="honey/vintagemock.png" alt="Vintage Mock">
+            <img class="slides active-slide" src="honey/Artboard 7@42.png" alt="Modern Logo" onclick="openModal(this.src)">
+            <img class="slides" src="honey/Artboard 8@42.png" alt="Modern Logomark" onclick="openModal(this.src)">
+            <img class="slides" src="honey/modernmock1.png" alt="Modern Mock 1" onclick="openModal(this.src)">
+            <img class="slides" src="honey/modernmock2.png" alt="Modern Mock 2" onclick="openModal(this.src)">
+            <img class="slides" src="honey/Artboard 10@42.png" alt="Vintage Logo" onclick="openModal(this.src)">
+            <img class="slides" src="honey/Artboard 10@42.png" alt="Vintage Logomark" onclick="openModal(this.src)">
+            <img class="slides" src="honey/vintagemock.png" alt="Vintage Mock" onclick="openModal(this.src)">
 
             <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
             <a class="next" onclick="changeSlide(1)">&#10095;</a>
@@ -109,6 +109,15 @@
             slides[currentSlide].classList.remove('active-slide');
             currentSlide = (currentSlide + n + slides.length) % slides.length;
             slides[currentSlide].classList.add('active-slide');
+        }
+
+        function openModal(src) {
+            document.getElementById('imageModal').style.display = "block";
+            document.getElementById('modalImage').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
         }
     </script>
 </body>

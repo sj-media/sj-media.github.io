@@ -89,12 +89,12 @@
         
         <!-- Slideshow -->
         <div class="slideshow-container">
-            <img class="slides active-slide" src="iso/Artboard 26@42.png">
-            <img class="slides" src="iso/Artboard 20@42.png">
-            <img class="slides" src="iso/Artboard 21@42.png">
-            <img class="slides" src="iso/Artboard 23@42.png">
-            <img class="slides" src="iso/Artboard 24@42.png">
-            <img class="slides" src="iso/Artboard 25@42.png">
+            <img class="slides active-slide" src="iso/Artboard 26@42.png" onclick="openModal(this.src)">
+            <img class="slides" src="iso/Artboard 20@42.png" onclick="openModal(this.src)">
+            <img class="slides" src="iso/Artboard 21@42.png" onclick="openModal(this.src)">
+            <img class="slides" src="iso/Artboard 23@42.png" onclick="openModal(this.src)">
+            <img class="slides" src="iso/Artboard 24@42.png" onclick="openModal(this.src)">
+            <img class="slides" src="iso/Artboard 25@42.png" onclick="openModal(this.src)">
 
             <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
             <a class="next" onclick="changeSlide(1)">&#10095;</a>
@@ -111,6 +111,15 @@
             slides[currentSlide].classList.remove('active-slide');
             currentSlide = (currentSlide + n + slides.length) % slides.length;
             slides[currentSlide].classList.add('active-slide');
+        }
+
+        function openModal(src) {
+            document.getElementById('imageModal').style.display = "block";
+            document.getElementById('modalImage').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
         }
     </script>
 </body>
