@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>The Honey Project</title>
+    <title>Poster Work</title>
     <style>
         .slideshow-container {
             position: relative;
             max-width: 80%;
             margin: auto;
-            overflow:hidden
+            object-fit: contain;
+            max-height: 100vh;
+
         }
 
         .slides {
@@ -82,23 +84,21 @@
     </header>
 
     <div class="container">
-        <h1>The Honey Project</h1>
+        <h1>Poster Work</h1>
         
         <!-- Slideshow -->
         <div class="slideshow-container">
-            <img class="slides active-slide" src="honey/Artboard 7@42.png" alt="Modern Logo">
-            <img class="slides" src="honey/Artboard 8@42.png" alt="Modern Logomark">
-            <img class="slides" src="honey/modernmock1.png" alt="Modern Mock 1">
-            <img class="slides" src="honey/modernmock2.png" alt="Modern Mock 2">
-            <img class="slides" src="honey/Artboard 10@42.png" alt="Vintage Logo">
-            <img class="slides" src="honey/Artboard 10@42.png" alt="Vintage Logomark">
-            <img class="slides" src="honey/vintagemock.png" alt="Vintage Mock">
-
+            <img class="slides active-slide" src="posters/lion.png" alt="Lion">
+            <img class="slides" src="posters/alice/Artboard 12@42.png" alt="Variation 1">
+            <img class="slides" src="posters/alice/Artboard 7@42.png" alt="Variation 2">
+            <img class="slides" src="posters/alice/Artboard 8@42.png" alt="Variation 3">
             <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
             <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
 
-        <p>The Honey Project is a mock brief assignment set by my college. With this piece of work I decided to make both a modern and a vintage variant, of which I believe the modern variant to be the stronger piece. Regardless, both variants can be seen above. Which one do you prefer?</p>
+        <p>This collection of posters consists of work made over the years for various reasons that have no application in a wider project.
+            Beginning with the lion, I was tasked to create a poster for awareness of an endangered species in my local zoo. Photograph taken by myself. 
+            Second, the Alice posters are a very minimalistic rendition of a promotional poster.</p>
     </div>
 
     <script>
