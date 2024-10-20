@@ -7,20 +7,24 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: #98B3B3;
     padding: 10px 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid white;
 }
 
 .logo {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
+    color: white;
 }
 
 nav ul {
@@ -31,7 +35,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 400;
 }
 
@@ -39,14 +43,40 @@ nav a:hover {
     color: gray;
 }
 
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('logo.png');
+    background-size: cover;
+    background-position: center;
+    margin: 40px auto;
+}
+
 .container {
     text-align: center;
     padding: 40px;
+    flex: 1; /* Takes up remaining space between header and footer */
 }
 
 h1 {
+    text-align: center;
     font-size: 36px;
+    font-weight: 700;
     margin-bottom: 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.content p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
 }
 
 .grid {
@@ -167,4 +197,54 @@ h1 {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+footer {
+    background-color: #548687;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.footer-item img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.footer-item a:hover {
+    color: #ddd;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
