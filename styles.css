@@ -75,6 +75,7 @@ body {
 /* Ensure main content is hidden until loading screen fades */
 #main-content {
     display: none;
+    min-height: 100%;
 }
 
 
@@ -333,7 +334,7 @@ footer {
     padding: 20px;
     text-align: center;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     clear: both;
 }
