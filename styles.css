@@ -3,35 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media (max-width: 1200px) {
-    .logo {
-        font-size: 3vw;
-    }
-
-    nav ul {
-        gap: 3vw;
-    }
-
-    nav a {
-        font-size: 3.5vw;
-    }
-
-    h1 {
-        font-size: 5vw;
-    }
-
-    .content p {
-        font-size: 3vw;
-    }
-
-    .footer-item a {
-        font-size: 3.5vw;
-    }
-
-    .footer-item img {
-        width: 3vw;
-    }
-}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -338,4 +309,34 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 3vw;
+    }
+
+    nav ul {
+        gap: 3vw;
+    }
+
+    nav a {
+        font-size: 3.5vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .content p {
+        font-size: 3vw;
+    }
+
+    .footer-item a {
+        font-size: 3.5vw;
+    }
+
+    .footer-item img {
+        width: 3vw;
+    }
 }
