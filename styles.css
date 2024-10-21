@@ -415,4 +415,8 @@ html, body {
         width: 4vw;
         height: 4vw;
     }
+    #loading-image {
+        height: 2vw;
+        width: 2vw;
+    }
 }
