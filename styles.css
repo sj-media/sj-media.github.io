@@ -328,6 +328,14 @@ html, body {
         font-size: 5vw;
     }
 
+    .grid a img {
+        filter: brightness(50%);
+    }
+    
+    .grid a .alt-text {
+        opacity: 1;
+    }
+
     .content p {
         font-size: 3.5vw;
     }
