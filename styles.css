@@ -127,7 +127,7 @@ nav a:hover {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background-image: url('logo.png');
+    background-image: url('bluelogo.png');
     background-size: cover;
     background-position: center;
     margin: 20px auto;
@@ -143,9 +143,22 @@ nav a:hover {
 
 h1 {
     text-align: center;
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 60px;
+    font-weight: 550;
     margin-bottom: 20px;
+    color: #878774;
+}
+
+.container p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+    max-width: 80%; /* Constricts to 80% of the user's screen */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* For a clean look */
+    color: #878774;
 }
 
 .content {
@@ -255,16 +268,6 @@ h1 {
 
 .prev:hover, .next:hover {
     background-color: gray;
-}
-
-.container p {
-    margin-top: 40px;
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 80%; /* Constricts to 80% of the user's screen */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; /* For a clean look */
 }
 
 .contact-form {
@@ -411,7 +414,7 @@ html, body {
     }
 
     h1 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .grid a img {
@@ -423,7 +426,7 @@ html, body {
     }
 
     .content p {
-        font-size: 3.5vw;
+        font-size: 2.5vw;
     }
 
     .footer-item a {
