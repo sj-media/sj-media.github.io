@@ -23,7 +23,7 @@ header {
 
 .logo {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
     text-decoration: none;
     
@@ -313,7 +313,7 @@ html, body {
 
 @media (max-width: 1200px) {
     .logo {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 
     nav ul {
@@ -333,10 +333,11 @@ html, body {
     }
 
     .footer-item a {
-        font-size: 3.5vw;
+        font-size: 2vw;
     }
 
     .footer-item img {
         width: 3vw;
+        height: 3vw;
     }
 }
