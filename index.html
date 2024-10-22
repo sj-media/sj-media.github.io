@@ -13,6 +13,33 @@
     <meta property="og:url" content="https://sjmedia.xyz" />
 </head>
 <body>
+    
+    <section>
+        <img src="landing/bg.png" id="bg">
+        <img src="landing/clouds.png" id="clouds">
+        <img src="landing/mountain.png" id="mountain">
+        <img src="landing/bottom.png" id="bottom">
+        <div class="landinglogo">
+            <img src ="logotypesvg.svg" id="landinglogo">
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let clouds = document.getElementById("clouds");
+        let mountain = document.getElementById("mountain");
+        let bottom = document.getElementById("bottom");
+        
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            clouds.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            bottom.style.top = value * 0.15 + 'px';
+            landinglogo.style.top = value * 1 + 'px';
+        })
+    
+    </script>
 
     <!-- Header -->
         <header>
