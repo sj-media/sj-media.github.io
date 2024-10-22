@@ -395,8 +395,8 @@ html, body {
 }
 
 @media (max-width: 1200px) {
-    .logo {
-        font-size: 4vw;
+    .logo img{
+        width: 20vw;
     }
 
     nav ul {
@@ -431,4 +431,5 @@ html, body {
         width: 4vw;
         height: 4vw;
     }
+
 }
