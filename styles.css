@@ -8,33 +8,6 @@
     --hover: gray;
 }
 
-.darkmode{
-    --bg-color: #D4D4AB;
-    --bg-darker: #F9F9D5;
-    --text-color: #878774;
-    --text-white: white;
-    --primary-color: #98B3B3;
-    --accent-color: #548687;
-    --hover: gray;
-}
-
-#theme-switch{
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    border-radius: 50%;
-    border-color: transparent;
-    background-color: var(--bg-darker);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    right: 25px;
-    margin-top: 50px;
-    cursor: pointer;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -164,6 +137,10 @@ h1 {
 .indexbody p {
     max-width: 80%;
     font-size: 16px;
+}
+
+.hyperlink {
+    text-decoration: none;
 }
 
 .grid {
