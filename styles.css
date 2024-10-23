@@ -77,6 +77,10 @@ section img{
     z-index: 1;
 }
 
+img#landinglogo {
+    object-fit: unset;
+ } 
+ 
 #bottom{
     z-index: 2;
 }
