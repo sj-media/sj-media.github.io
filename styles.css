@@ -79,7 +79,11 @@ body {
 
 img#landinglogo {
     object-fit: unset;
- } 
+ }
+
+ .clouds2{
+    display:none;
+ }
  
 #bottom{
     z-index: 2;
@@ -467,5 +471,11 @@ html, body {
         height: 4vw;
     }
 
+    #clouds {
+        display: none;
+    }
 
+    .clouds2 {
+        display:flex;
+    }
 }

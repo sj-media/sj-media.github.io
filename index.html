@@ -17,16 +17,21 @@
     <section id="desktopland">
         <img src="landing/bg.png" id="bg">
         <img src="landing/clouds.png" id="clouds">
+        <div class="clouds2">
+            <img src ="landing/clouds2.png" id="clouds2">
+        </div>
         <img src="landing/mountain.png" id="mountain">
         <img src="landing/bottom.png" id="bottom">
         <div class="landinglogo">
             <img src ="logotypesvg.svg" id="landinglogo">
         </div>
+        
     </section>
     
     <script type="text/javascript">
         let bg = document.getElementById("bg");
         let clouds = document.getElementById("clouds");
+        let clouds2 = document.getElementById("clouds2");
         let mountain = document.getElementById("mountain");
         let bottom = document.getElementById("bottom");
         
@@ -34,6 +39,7 @@
             var value = window.scrollY;
 
             clouds.style.left = -value * 0.5 + 'px';
+            clouds2.style.left = -value * 0.5 + 'px';
             mountain.style.top = -value * 0.15 + 'px';
             bottom.style.top = value * 0.15 + 'px';
             landinglogo.style.top = value * 1 + 'px';
