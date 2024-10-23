@@ -166,7 +166,7 @@ nav a:hover {
     padding: 40px;
     flex: 1; /* Takes up remaining space between header and footer */
     opacity: 0;
-    animation: fadeIn 1.5s ease forwards 0.5s; /* Delayed fade-in for the container */
+    animation: fadeIn 1.5s ease forwards 0.5s; 
 }
 
 h1 {
@@ -182,10 +182,10 @@ h1 {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.6;
-    max-width: 50%; /* Constricts to 80% of the user's screen */
+    max-width: 70%; 
     margin-left: auto;
     margin-right: auto;
-    text-align: center; /* For a clean look */
+    text-align: center; 
     color: var(--text-color);
 }
 
@@ -238,13 +238,13 @@ h1 {
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    pointer-events: none; /* Makes sure the text doesn't block interaction */
+    pointer-events: none; 
 }
 
 .grid a:hover img {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    filter: brightness(50%); /* Darkens the image */
+    filter: brightness(50%); 
 }
 
 .grid a:hover .alt-text {
@@ -253,7 +253,7 @@ h1 {
 
 .slideshow-container {
     position: relative;
-    max-width: 50%;
+    max-width: 80%;
     margin: auto;
     overflow:hidden
 }
@@ -263,7 +263,7 @@ h1 {
     width: 100%;
     transition: transform 0.3s, box-shadow 0.3s;
     object-fit: contain; /* Ensures consistent size without stretching */
-    aspect-ratio: 16/9; /* Maintain a 16:9 ratio for all images */
+    aspect-ratio: 16/9; 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -456,6 +456,10 @@ html, body {
     
     .grid a .alt-text {
         opacity: 1;
+    }
+
+    .container p {
+        font-size: 16px;
     }
 
     .indexbody p {
