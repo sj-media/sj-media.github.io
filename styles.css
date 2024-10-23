@@ -459,12 +459,12 @@ html, body {
     }
 
     .slideshow-container {
-        max-width: 90%;
+        max-width: 110%;
     }
 
     .container p {
         font-size: 16px;
-        max-width: 80%;
+        max-width: 90%;
     }
 
     .indexbody p {
