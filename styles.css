@@ -475,7 +475,7 @@ html, body {
         display: none;
     }
 
-    .clouds2 {
+    #clouds2 {
         display:flex;
     }
 }
