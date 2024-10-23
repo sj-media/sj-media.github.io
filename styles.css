@@ -360,8 +360,9 @@ h1 {
 
 .modal-content {
     margin: auto;
+    margin-top: 10vh;
     display: block;
-    max-width: 80%;
+    max-width: 100%;
     max-height: 80vh;
     object-fit: contain; /* Keeps the aspect ratio */
 }
@@ -469,6 +470,10 @@ html, body {
 
     .indexbody p {
         font-size: 3vw;
+    }
+
+    .modal-content {
+        margin-top: 20vh;
     }
 
     .footer-item a {
