@@ -54,6 +54,15 @@
     
     </script>
 
+
+<!-- FINISH TOUCHSTART EVENT FOR MOBILE-->
+
+
+
+
+
+
+
     <!-- Header -->
         <header>
             <div class="logo">
@@ -87,35 +96,44 @@
                 <a href="https://sjmedia.xyz/photography.html"><div class="clip clip2"><div class="clipalt-text" alt="Photography">Photography</div></div></a>
 
                 <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        // Get all elements with the class 'workpreview'
-                        const workPreviewItems = document.querySelectorAll('.workpreview');
-                
-                        workPreviewItems.forEach(item => {
-                            // Add 'touchstart' event listener for each item in the workpreview class
-                            item.addEventListener('touchstart', function(e) {
-                                e.preventDefault(); // Prevent default touch behavior (like scrolling or link clicking)
-                
-                                // Apply the hover-like effect when touched
-                                const img = item.querySelector('img');
-                                const altText = item.querySelector('.alt-text');
-                
-                                // If it doesn't have an active class, add the hover-like styles
-                                if (!item.classList.contains('active')) {
-                                    item.classList.add('active'); // Optional: Add an active class for touch states
-                                    img.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
-                                    img.style.filter = 'brightness(50%)';
-                                    altText.style.opacity = '1';  // Show the alt-text
+                    document.addEventListener('DOMContentLoaded', function () {
+                        let expandedElement = null;
+                    
+                        // Add click event listeners to all elements with the class "workpreview"
+                        document.querySelectorAll('.workpreview').forEach(function (item) {
+                            let clickedOnce = false;
+                    
+                            item.addEventListener('click', function (e) {
+                                e.preventDefault();
+                    
+                                // If an element is already expanded and another is clicked, revert the old one
+                                if (expandedElement && expandedElement !== item) {
+                                    expandedElement.classList.remove('expanded');
+                                    expandedElement = null;
+                                    clickedOnce = false;
+                                }
+                    
+                                if (!clickedOnce) {
+                                    // Expand the clicked element
+                                    item.classList.add('expanded');
+                                    expandedElement = item;
+                                    clickedOnce = true; // First click expands the image
                                 } else {
-                                    // If already touched (i.e., it has an 'active' class), reset styles
-                                    item.classList.remove('active');
-                                    img.style.filter = 'brightness(100%)';
-                                    altText.style.opacity = '0';  // Hide the alt-text
+                                    // On second click, redirect to the link (after expanding)
+                                    window.location.href = item.getAttribute('href');
                                 }
                             });
                         });
+                    
+                        // Click anywhere outside to collapse the expanded image
+                        document.addEventListener('click', function (e) {
+                            if (expandedElement && !expandedElement.contains(e.target)) {
+                                expandedElement.classList.remove('expanded');
+                                expandedElement = null;
+                            }
+                        });
                     });
-                </script>
+                    </script>
 
             </section>
         </div>

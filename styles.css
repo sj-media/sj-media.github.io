@@ -250,7 +250,9 @@ nav a:hover {
     opacity: 1;
 }
 
-
+.workpreview.expanded img {
+    clip-path: inset(0 0 0 0);
+}
 
 .clipalt-text {
     position: absolute;
