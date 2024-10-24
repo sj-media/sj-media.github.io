@@ -617,3 +617,9 @@ html, body {
         display:flex;
     }
 }
+
+@media (max-width: 600px) {
+    .clipalt-text {
+        font-size: 40px;
+    }
+}
