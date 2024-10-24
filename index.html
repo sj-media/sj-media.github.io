@@ -85,6 +85,38 @@
             <section class="workpreview">
                 <a href="https://sjmedia.xyz/design.html"><div class="clip clip1"><div class="clipalt-text" alt="Graphic Design">Graphic Design</div></div></a>
                 <a href="https://sjmedia.xyz/photography.html"><div class="clip clip2"><div class="clipalt-text" alt="Photography">Photography</div></div></a>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        // Get all elements with the class 'workpreview'
+                        const workPreviewItems = document.querySelectorAll('.workpreview');
+                
+                        workPreviewItems.forEach(item => {
+                            // Add 'touchstart' event listener for each item in the workpreview class
+                            item.addEventListener('touchstart', function(e) {
+                                e.preventDefault(); // Prevent default touch behavior (like scrolling or link clicking)
+                
+                                // Apply the hover-like effect when touched
+                                const img = item.querySelector('img');
+                                const altText = item.querySelector('.alt-text');
+                
+                                // If it doesn't have an active class, add the hover-like styles
+                                if (!item.classList.contains('active')) {
+                                    item.classList.add('active'); // Optional: Add an active class for touch states
+                                    img.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
+                                    img.style.filter = 'brightness(50%)';
+                                    altText.style.opacity = '1';  // Show the alt-text
+                                } else {
+                                    // If already touched (i.e., it has an 'active' class), reset styles
+                                    item.classList.remove('active');
+                                    img.style.filter = 'brightness(100%)';
+                                    altText.style.opacity = '0';  // Hide the alt-text
+                                }
+                            });
+                        });
+                    });
+                </script>
+
             </section>
         </div>
     
