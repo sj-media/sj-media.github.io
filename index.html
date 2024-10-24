@@ -104,7 +104,6 @@
                             let clickedOnce = false;
                     
                             item.addEventListener('click', function (e) {
-                                e.preventDefault();
                     
                                 // If an element is already expanded and another is clicked, revert the old one
                                 if (expandedElement && expandedElement !== item) {
@@ -121,6 +120,7 @@
                                     clickedOnce = true; // First click expands the image
                                 } else {
                                     // On second click, redirect to the link (after expanding)
+                                    expandedElement.classList.remove('expanded');
                                     window.location.href = item.getAttribute('href');
                                 }
                             });
@@ -128,8 +128,6 @@
                     
                         // Click anywhere outside to collapse the expanded image
                         document.addEventListener('click', function (e) {
-                            e.preventDefault();
-
                             if (expandedElement && !expandedElement.contains(e.target)) {
                                 expandedElement.classList.remove('expanded');
                                 expandedElement = null;
