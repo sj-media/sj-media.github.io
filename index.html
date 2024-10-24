@@ -104,6 +104,7 @@
                             let clickedOnce = false;
                     
                             item.addEventListener('click', function (e) {
+                                e.preventDefault();
                     
                                 // If an element is already expanded and another is clicked, revert the old one
                                 if (expandedElement && expandedElement !== item) {
