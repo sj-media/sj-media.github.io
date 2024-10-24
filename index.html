@@ -116,6 +116,7 @@
                                     // Expand the clicked element
                                     item.classList.add('expanded');
                                     expandedElement = item;
+                                    let html=document.querySelectorAll(".clip >:not(.clip1, clip2)");
                                     clickedOnce = true; // First click expands the image
                                 } else {
                                     // On second click, redirect to the link (after expanding)
