@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Colwyn Bay - SJ Media</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href = "https://sjmedia.xyz"><img src="logotypewhite.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Colwyn Bay</h1>
+        
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <img class="slides active-slide" src="photography/colwyn/1.png" onclick="openModal(this.src)">
+            <img class="slides" src="photography/colwyn/2.png" onclick="openModal(this.src)">
+            <img class="slides" src="photography/colwyn/3.png" onclick="openModal(this.src)">
+            <img class="slides" src="photography/colwyn/4.png" onclick="openModal(this.src)">
+            <img class="slides" src="photography/colwyn/5.png" onclick="openModal(this.src)">
+            <img class="slides" src="photography/colwyn/6.png" onclick="openModal(this.src)">
+            <img class="slides" src="photography/colwyn/7.png" onclick="openModal(this.src)">
+            <img class="slides" src="photography/colwyn/8.png" onclick="openModal(this.src)">
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+        <p>During a trip to Colwyn Bay via university to view photography exhibitions, I took the opportunity to photograph parts of this beachside town as it was my first time in the area. 
+            I have ideas for future projects in this town, focusing on the erosion of high streets and these seemingly becoming derelict coastal towns. These images however focus on a prettier side,
+            showcasing the iconic pier and objects from the beach.
+        </p>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-item">
+                <img src="socials/behance.png" alt="Behance Icon">
+                <a href="#">BEHANCE (COMING SOON)</a>
+            </div>
+            <div class="footer-item">
+                <img src="socials/instagram.png" alt="Instagram Icon">
+                <a href="https://instagram.com/sj.media43">INSTAGRAM</a>
+            </div>
+            <div class="footer-item">
+                <img src="socials/email.png" alt="Email Icon">
+                <a href="https://sjmedia.xyz/contact.html">EMAIL</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slides');
+
+        function changeSlide(n) {
+            slides[currentSlide].classList.remove('active-slide');
+            currentSlide = (currentSlide + n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active-slide');
+        }
+
+        function openModal(src) {
+            document.getElementById('imageModal').style.display = "block";
+            document.getElementById('modalImage').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+    </script>
+</body>
+</html>
