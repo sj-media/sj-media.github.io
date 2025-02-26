@@ -92,24 +92,16 @@
                 <p>Welcome to my website. This is very much a work in progress, however some of my work can be seen by clicking the <a href = "https://sjmedia.xyz/design.html" class = "hyperlink"><em>Design</em></a> and <a href = "https://sjmedia.xyz/photography.html" class = "hyperlink"><em>Photography</em></a> links above, or the images below. Thank you for checking out my website.</p>
             </div>
 
-            <div class="preview">
-                <a href="design.html"><img src="preview/design.png" alt="Design" class="circular-image"></a>
-                <a href="photography.html"><img src="preview/photo.jpg" alt="Photography" class="circular-image"></a>
+            <div class="image-container">
+                <a href="design.html" class="image-wrapper">
+                    <img src="preview/design.png" alt="Design" class="circular-image">
+                    <span class="image-text">Design</span>
+                </a>
+                <a href="photography.html" class="image-wrapper">
+                    <img src="preview/photo.jpg" alt="Photography" class="circular-image">
+                    <span class="image-text">Photography</span>
+                </a>
             </div>
-
-            <script>
-                document.querySelectorAll('.image-link').forEach(link => {
-                    let tapped = false;
-                    link.addEventListener('click', function(event) {
-                        if (!tapped) {
-                            event.preventDefault();
-                            this.querySelector('img').classList.add('active');
-                            tapped = true;
-                            setTimeout(() => tapped = false, 500);
-                        }
-                    });
-                });
-                </script>
         </div>
     
     <!-- Footer -->
