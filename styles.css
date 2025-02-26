@@ -198,60 +198,18 @@ nav a:hover {
     margin: 20px auto;
 }
 
-.workpreview {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+.preview {
     display: flex;
-    position: relative;
-    width: 80vw;
-    height: 60vh;
-    background: var(--bg-color);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.clip {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s;
-}
-
-.clip1 {
-    background: url(preview/design.png);
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(0 0, 0% 100%, 100% 100%);
-}
-
-.clip2 {
-    background: url(preview/photo.jpg);
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
-}
-
-.workpreview:hover .clip {
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%)
-}
-
-.workpreview .clip:hover {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  filter: brightness(50%); 
-}
-
-.workpreview .clip1:hover .clipalt-text{
-    opacity: 1;
-}
-
-.workpreview .clip2:hover .clipalt-text{
-    opacity: 1;
-}
-
-.workpreview.expanded img {
-    clip-path: inset(0 0 0 0);
+.circular-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    clip-path: circle(50%);
 }
 
 .clipalt-text {
