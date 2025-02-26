@@ -206,10 +206,34 @@ nav a:hover {
 }
 
 .circular-image {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     clip-path: circle(50%);
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-image:hover,
+.circular-image.active {
+    filter: brightness(70%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    position: relative;
+}
+
+.circular-image:hover::after,
+.circular-image.active::after {
+    content: attr(alt);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
 }
 
 .clipalt-text {

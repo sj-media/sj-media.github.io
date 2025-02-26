@@ -96,6 +96,20 @@
                 <a href="design.html"><img src="preview/design.png" alt="Design" class="circular-image"></a>
                 <a href="photography.html"><img src="preview/photo.jpg" alt="Photography" class="circular-image"></a>
             </div>
+
+            <script>
+                document.querySelectorAll('.image-link').forEach(link => {
+                    let tapped = false;
+                    link.addEventListener('click', function(event) {
+                        if (!tapped) {
+                            event.preventDefault();
+                            this.querySelector('img').classList.add('active');
+                            tapped = true;
+                            setTimeout(() => tapped = false, 500);
+                        }
+                    });
+                });
+                </script>
         </div>
     
     <!-- Footer -->
