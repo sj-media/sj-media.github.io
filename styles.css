@@ -200,9 +200,10 @@ nav a:hover {
 
 .preview {
     display: flex;
-    justify-content: center;
-    gap: 80px;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top: 50px;
+    width: 100%;
 }
 
 .image-wrapper {
@@ -224,7 +225,7 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
