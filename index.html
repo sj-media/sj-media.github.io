@@ -83,7 +83,7 @@
   
         
     <!-- Body content -->
-        <div class="container">
+        <!-- <div class="container">
             <div class="circle"></div>
 
             <h1>Welcome to my portfolio.</h1>
@@ -92,18 +92,41 @@
                 <p>Welcome to my website. This is very much a work in progress, however some of my work can be seen by clicking the <a href = "https://sjmedia.xyz/design.html" class = "hyperlink"><em>Design</em></a> and <a href = "https://sjmedia.xyz/photography.html" class = "hyperlink"><em>Photography</em></a> links above, or the images below. Thank you for checking out my website.</p>
             </div>
 
-            <div class="image-container">
-                <a href="design.html" class="image-wrapper">
-                    <img src="preview/design.png" alt="Design" class="circular-image">
-                    <span class="image-text">Design</span>
+            <div class="split-gallery">
+                <a href="design.html" class="gallery-panel left-panel">
+                    <div class="panel-content">
+                        <h2>Design</h2>
+                    </div>
+                 </a>
+                <a href="photography.html" class="gallery-panel right-panel">
+                    <div class="panel-content">
+                        <h2>Photography</h2>
+                    </div>
                 </a>
-                <a href="photography.html" class="image-wrapper">
-                    <img src="preview/photo.jpg" alt="Photography" class="circular-image">
-                    <span class="image-text">Photography</span>
+            </div> 
+        </div> -->
+
+        <div class="container">
+            <!-- Split background panels (now positioned behind content) -->
+            <div class="split-background">
+                <a href="design.html" class="bg-panel left-panel">
+                    <div class="bg-alt-text">Design</div>
+                </a>
+                <a href="photography.html" class="bg-panel right-panel">
+                    <div class="bg-alt-text">Photography</div>
                 </a>
             </div>
+        
+            <!-- Foreground content (logo, text, etc.) -->
+            <div class="foreground-content">
+                <div class="circle"></div>
+                <h1>Welcome to my portfolio.</h1>
+                <div class="indexbody">
+                    <<p>Welcome to my website. This is very much a work in progress, however some of my work can be seen by clicking the <a href="design.html" class="hyperlink">Design</a> and <a href="photography.html" class="hyperlink">Photography</a> links above.</p>
+                </div>
+            </div>
         </div>
-    
+     
     <!-- Footer -->
         <footer>
             <div class="footer-links">
