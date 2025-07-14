@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>SJ Media</title>
-    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico">
     <meta property="og:title" content="SJ Media" /> 
     <meta property="og:description" content="Graphic Design & Photography" /> 
     <meta property="og:image" content="https://sjmedia.xyz/designgrid/Artboard_24@42.png" /> 
@@ -15,24 +15,14 @@
 <body>
     
     <section id="desktopland">
-        <img src="landing/bg.png" id="bg">
-        <img src="landing/clouds.png" id="clouds">
-            <img src ="landing/clouds2.png" id="clouds2">
-        <img src="landing/mountain.png" id="mountain">
-        <img src="landing/bottom.png" id="bottom">
+        <img src="parallax/bg.png" id="bg">
+        <img src="parallax/clouds.png" id="clouds">
+            <img src ="parallax/clouds2.png" id="clouds2">
+        <img src="parallax/mountain.png" id="mountain">
+        <img src="parallax/bottom.png" id="bottom">
         <div class="landinglogo">
-            <img src ="logotypesvg.svg" id="landinglogo">
-
-            <div class="scroll-arrow">
-                <a href="#indexbody">
-                    <div class="arrow-circle">
-                        <img src = "arrow.png" alt="Scroll Down" class="arrow-image">
-                    </div>
-                </a>
-            </div>
-
+            <img src ="assets/logotypesvg.svg" id="landinglogo">
         </div>
-        
     </section>
     
     <script type="text/javascript">
@@ -51,68 +41,32 @@
             bottom.style.top = value * 0.15 + 'px';
             landinglogo.style.top = value * 1 + 'px';
         })
-    
     </script>
-
-
-<!-- FINISH TOUCHSTART EVENT FOR MOBILE-->
-
-
-
-
-
-
 
     <!-- Header -->
         <header>
             <div class="logo">
-                <a href = "https://sjmedia.xyz"><img src="logotypewhite.png" alt="Logo"></a>
+                <a href = "https://sjmedia.xyz"><img src="assets/logotypewhite.png" alt="Logo"></a>
             </div>
 
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="design.html">Design</a></li>
-                    <li><a href="photography.html">Photography</a></li>
-                    <li><a href="archives.html">Archives</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="design/">Design</a></li>
+                    <li><a href="photography/">Photography</a></li>
+                    <li><a href="archives/">Archives</a></li>
+                    <li><a href="contact/">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-  
-        
-    <!-- Body content -->
-        <!-- <div class="container">
-            <div class="circle"></div>
-
-            <h1>Welcome to my portfolio.</h1>
-
-            <div class="indexbody">
-                <p>Welcome to my website. This is very much a work in progress, however some of my work can be seen by clicking the <a href = "https://sjmedia.xyz/design.html" class = "hyperlink"><em>Design</em></a> and <a href = "https://sjmedia.xyz/photography.html" class = "hyperlink"><em>Photography</em></a> links above, or the images below. Thank you for checking out my website.</p>
-            </div>
-
-            <div class="split-gallery">
-                <a href="design.html" class="gallery-panel left-panel">
-                    <div class="panel-content">
-                        <h2>Design</h2>
-                    </div>
-                 </a>
-                <a href="photography.html" class="gallery-panel right-panel">
-                    <div class="panel-content">
-                        <h2>Photography</h2>
-                    </div>
-                </a>
-            </div> 
-        </div> -->
-
         <div class="container">
             <!-- Split background panels (now positioned behind content) -->
             <div class="split-background">
-                <a href="design.html" class="bg-panel left-panel">
+                <a href="design/" class="bg-panel left-panel">
                     <div class="bg-alt-text">Design</div>
                 </a>
-                <a href="photography.html" class="bg-panel right-panel">
+                <a href="photography/" class="bg-panel right-panel">
                     <div class="bg-alt-text">Photography</div>
                 </a>
             </div>
@@ -122,7 +76,7 @@
                 <div class="circle"></div>
                 <h1>Welcome to my portfolio.</h1>
                 <div class="indexbody">
-                    <p>Welcome to my website. This is very much a work in progress, however some of my work can be seen by clicking these <a href="design.html" class="hyperlink">Design</a> and <a href="photography.html" class="hyperlink">Photography</a> links or the background images. Thank you for viewing my website.</p>
+                    <p>Welcome to my website. This is very much a work in progress, however some of my work can be seen by clicking these <a href="design/" class="hyperlink">Design</a> and <a href="photography/" class="hyperlink">Photography</a> links or the background images. Thank you for viewing my website.</p>
                 </div>
             </div>
         </div>
@@ -131,16 +85,16 @@
         <footer>
             <div class="footer-links">
                 <div class="footer-item">
-                    <img src="socials/behance.png" alt="Behance Icon">
+                    <img src="assets/socials/behance.png" alt="Behance Icon">
                     <a href="#">BEHANCE (COMING SOON)</a>
                 </div>
                 <div class="footer-item">
-                    <img src="socials/instagram.png" alt="Instagram Icon">
+                    <img src="assets/socials/instagram.png" alt="Instagram Icon">
                     <a href="https://instagram.com/sj.media43">INSTAGRAM</a>
                 </div>
                 <div class="footer-item">
-                    <img src="socials/email.png" alt="Email Icon">
-                    <a href="https://sjmedia.xyz/contact.html">EMAIL</a>
+                    <img src="assets/socials/email.png" alt="Email Icon">
+                    <a href="contact/">EMAIL</a>
                 </div>
         </footer>
         
