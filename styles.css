@@ -24,7 +24,6 @@ body {
     min-height: 1800px;
     opacity: 0; /* Start hidden */
     animation: fadeIn 1s ease-in-out forwards; /* Fade-in for the entire body */
-    background: #F9F9D5;
 }
 
 #desktopland{
