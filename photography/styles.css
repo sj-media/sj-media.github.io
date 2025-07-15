@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    min-height: 1800px;
+    min-height: 1200px;
     opacity: 0; /* Start hidden */
     animation: fadeIn 1s ease-in-out forwards; /* Fade-in for the entire body */
 }
