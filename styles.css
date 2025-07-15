@@ -3,8 +3,8 @@
     --bg-darker: #D4D4AB;
     --text-color: white;;
     --text-white: white;
-    --primary-color: #1c324cb9;
-    --accent-color: #1c254c5f;
+    --primary-color: #1c254c46;
+    --accent-color: #1c254c46;
     --hover: gray;
 }
 
@@ -590,4 +590,27 @@ html, body {
     height: 100%;
     border-radius: 5px;
     object-fit: cover;
+    cursor: pointer;
+}
+
+
+#lightbox {
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
 }
