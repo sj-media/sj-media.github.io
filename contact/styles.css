@@ -1,6 +1,6 @@
 :root{
     --bg-color: #29364b;
-    --bg-darker: #D4D4AB;
+    --bg-darker: white;
     --text-color: white;;
     --text-white: white;
     --primary-color: #1c254c46;
@@ -330,7 +330,7 @@ h1 {
 .contact-form button {
     padding: 10px 20px;
     background-color: var(--text-color);
-    color: var(--text-white);
+    color: var(--text-black);
     border: none;
     border-radius: 4px;
     cursor: pointer;
