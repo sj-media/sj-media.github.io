@@ -21,7 +21,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    min-height: 1200px;
     opacity: 0; /* Start hidden */
     animation: fadeIn 1s ease-in-out forwards; /* Fade-in for the entire body */
 }
@@ -379,7 +378,7 @@ footer {
     text-decoration: none;
     color: var(--text-white);
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 500;
 }
 
 .footer-item a:hover {
